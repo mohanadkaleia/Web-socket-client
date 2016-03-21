@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2015, 7:49:35 PM
+    Author     : Mohanad Shab Kaleia
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('./images/giftly.png');
+}
+
+div {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.main {
+    width: 50%;
+    margin:0 auto;
+    margin-top:50px;
+}
+
+input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#log {
+    width: 100%;
+    height: 300px;
+    background-color:#404040;
+    color: white;
+    opacity: 0.9;
+    padding:  5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.resend-group {
+    margin-top: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin:0 auto;
+}

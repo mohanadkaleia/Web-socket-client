@@ -1,0 +1,10 @@
+{
+    "require": {
+        "cboden/ratchet": "v0.3.3"
+    },
+    "autoload": {
+        "classmap": [
+            "Chat.php"
+        ]
+    }
+}

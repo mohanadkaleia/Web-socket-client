@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WebSocket Client</title>        
+        <link rel="shortcut icon" type="image/png" href="icon.png"/>
+        <link rel="stylesheet" href="bootstrap.min.css">        
+        <link rel="stylesheet" href="jquery.sf-flash.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-2.2.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" href="animate.min.css">
+        <script src="jquery.sf-flash.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>WebSocket Client</h1>
+            <p>Web-Socket client can be used to test the connection between a client and server using specific socket</p>
+            <div id="status_connected" class="alert alert-success" role="alert" style="display:none">Connected Succesfully</div>
+            <div id="status_not_connected" class="alert alert-warning alert-dismissibl" style="display:none" role="alert">Disconnected</div>
+            <div id="status_info" class="alert alert-info" style="display:none" role="alert">Data has been sent</div>
+            <div id="status_error" class="alert alert-danger" style="display:none" role="alert">Oops an error has been happened!</div>
+            <form>                
+                <div class="input-group">
+                    <input type="text" id="url" name="url" class="form-control" placeholder="WebSocket Server URL, example: ws://127.0.0.1:2000" value="ws://"/>
+                    <span class="input-group-btn">
+                        <button id="connectBtn" class="btn btn-info" type="button">Connect!</button>
+                        <button id="disconnectBtn" class="btn btn-warning" type="button" style="display:none">Disconnect!</button>
+                    </span>
+                </div><!-- /input-group -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <textarea id="message" class="form-control" rows="10" placeholder="Request.."></textarea>                        
+                        <div class="resend-group input-group">                            
+                            <input id="resend" type="number" class="form-control" placeholder="Resend the message every x">   
+                            <span class="input-group-addon">sec</span>                            
+                        </div>
+                        <input id="send" type="button" class="btn btn-success form-control" value="Send"/>
+                    </div>
+                    <div class="col-md-6 log-panel">
+                        <div id="log">>_</div>
+                    </div>                    
+                </div>                           
+            </form>
+        </div>        
+        <script src="client.js"></script>
+    </body>
+</html>
